@@ -13,7 +13,7 @@
     - Learning : In this we configure the ip addresses of the servers, which could be organized as groups.
 - In ~/.ansible.cfg file (create the file if it doesn't exist already) do the following:
     - Status-Done
--Create a new directory ~/.ansible/retry-files and set retry_files_save_path to it.
+- Create a new directory ~/.ansible/retry-files and set retry_files_save_path to it.
     - Status-https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/retryfiles.png
     - Learning : In, general any software gives priority to access the config files as: 
         1.  ./ansible.cfg
