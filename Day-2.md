@@ -4,16 +4,20 @@ The Assignment
 Perform the following operations using ad-hoc commands and ansible modules :
 
  1)Fetch and display to STDOUT Ansible facts using the setup module.
-- Status:
+- Status:https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/fact1.png
+- Learning: Setup is a module which gather facts about remote hosts, that can be used in playbooks.
 
-    2)Fetch and display only the "virtual" subset of facts for each host.
-- Status  :  
+2)Fetch and display only the "virtual" subset of facts for each host.
+- Status  :  https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/virtual.png
+- Learning: We can customise the fact gathering using setup module.
 
 3)Fetch and display the value of fully qualified domain name (FQDN) of each host from their Ansible facts.
-- Status :   
+- Status : 
+-Learning:
 
 4)Display the uptime of all hosts using the command module.
-- Status:  
+- Status:  https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/uptime.png
+- Learning: Command module simply provides shell enviorment where we can run linux commands to get STDOUT.
 
 5)Ping all hosts except the 'control' host using the --limit option
 - Status:
