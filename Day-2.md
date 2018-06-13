@@ -32,7 +32,8 @@ Perform the following operations using ad-hoc commands and ansible modules :
    -  CentOS systems use the latest epel-release package
     - RHEL systems should use https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
     - Create inventory groups app and web
-- Status:
+- Status:https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/epel-release.png
+- Learning : Learned about EPEL package and yum module for different versions like centos, RHEL systems etc.
 
  8)set a cron on ansible control machine that will run every 1 minute , and perform below tasks
     
