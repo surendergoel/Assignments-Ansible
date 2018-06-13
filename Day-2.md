@@ -37,4 +37,4 @@ Perform the following operations using ad-hoc commands and ansible modules :
 
 - execute ansible adhoc commands on client machines (cannot be control machine) , to create a file in /var/log/ninja_name on all the client nodes, append system_hostname [:space:] system_time in the file every 1 minute using ansible facts.
 
-- Status:
+- Status :
