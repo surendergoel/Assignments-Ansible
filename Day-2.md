@@ -24,7 +24,8 @@ Perform the following operations using ad-hoc commands and ansible modules :
 - Learning : Using --limit option we can limit the task  eg. limiting host
 
 6)Setup Java8 on the hosts in the "App" group using the apt module.
-- Status:
+- Status:https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/java8.png
+- Learning : apt or yum module are used to manage packages on remote hosts.
 
 7)Setup and enable the EPEL package repository on the hosts in the "web" group using the yum module.
 
