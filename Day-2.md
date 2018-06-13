@@ -20,7 +20,8 @@ Perform the following operations using ad-hoc commands and ansible modules :
 - Learning: Command module simply provides shell enviorment where we can run linux commands to get STDOUT.
 
 5)Ping all hosts except the 'control' host using the --limit option
-- Status:
+- Status: https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/pinglimit.png
+- Learning : Using --limit option we can limit the task  eg. limiting host
 
 6)Setup Java8 on the hosts in the "App" group using the apt module.
 - Status:
@@ -37,4 +38,4 @@ Perform the following operations using ad-hoc commands and ansible modules :
 
 - execute ansible adhoc commands on client machines (cannot be control machine) , to create a file in /var/log/ninja_name on all the client nodes, append system_hostname [:space:] system_time in the file every 1 minute using ansible facts.
 
-- Status :
+- Status:
