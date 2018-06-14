@@ -1,7 +1,7 @@
 # The Assignment
 
 -  Create and delete ninja directory on host machine
-    - Status: Done
+    - Status: [hosts](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/hosts.png)
     - Learning: In inventory we can manage organized goup of hosts.
 -  Set hostname on all nodes from remote machine
     - Status: [hostname](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/hostname.png)
@@ -13,7 +13,7 @@
       - Debian ( ip of debian machine)
     - Centos ( ip of centos machine)
     -  All ( ip of all nodes )
-- Status : Done setup
+- Status : [hosts](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/hosts.png)
 - Learning: In inventory we can manage organized goup of hosts.
 
 Problem statement: Using Adhoc command
