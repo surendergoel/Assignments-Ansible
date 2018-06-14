@@ -8,13 +8,13 @@
     - Learning: using command module we can perform shell operation on hosts, and learned about the concept of hostname & its configuration as well (/etc/hosts , /etc/hostname).
 -  Fetch os of all nodes and store o/p into a file, use min two different machine of different flavour of os.
    - Status: [issue_os](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/issue_os.png) issue in copying output in a folder.
-   - Learning: Did this task using command module, and got to know about the location where os information lies. Usage of redirect operator.
+   - Learning: Using command module, and got to know about the location where os information lies. Usage of redirect operator.
 -  Add three group into hosts file through ansible module.
       - Debian ( ip of debian machine)
     - Centos ( ip of centos machine)
     -  All ( ip of all nodes )
 - Status : Done setup
-- Learning:
+- Learning: In inventory we can manage organized goup of hosts.
 
 Problem statement: Using Adhoc command
 
