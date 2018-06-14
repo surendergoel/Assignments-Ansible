@@ -16,7 +16,7 @@
 - Status : [hosts](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/hosts.png)
 - Learning: In inventory we can manage organized goup of hosts.
 
-Problem statement: Using Adhoc command
+# Problem statement: Using Adhoc command
 
 Step 1:
 
