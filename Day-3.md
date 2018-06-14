@@ -21,26 +21,19 @@ Problem statement: Using Adhoc command
 Step 1:
 
 - Install apache on Debian machine
-  - Status: 
-  - Learning:
 - Cross check apache isntalled or not from remote machine
-  - Status: 
-  - Learning:
 - Apache runn  on 8082 port
-    - Status:
-    - Learning:
 - Create two virtual host
-  - Status:
-  - Learning:
-- Restart apache from remote machine
-   - Status:
-   - Learning:
+- Restart apache from remote machine  
+
+  - Status- Debian machine is not available(technical issue) 
+
 
 Step2:
 
 - Install nginx on centos machine
-  - Status:
-  - Learning:
+  - Status: [nginx_install](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/nginx_install.png)
+  - Learning: Usage of yum module to manage package on nodes.
 -  Nginx run on 8080 port.
    - Status:
    - Learning:
