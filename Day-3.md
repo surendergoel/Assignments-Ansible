@@ -42,5 +42,5 @@ Step2:
 Step3:
 
 - Configure Nginx - configure it to run as reverse proxy to apache
-  - Status:
-  - Learning:
+  - Status: [tomcat_install](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/tocat_install.png) , Pending
+  - Learning: Learned about the concept of reverse proxy and forward proxy, and their configuration manually. But facing some issues using Ansible, hence it is pending
