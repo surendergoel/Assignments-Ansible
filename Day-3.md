@@ -35,8 +35,8 @@ Step2:
   - Status: [nginx_install](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/nginx_install.png)
   - Learning: Usage of yum module to manage package on nodes.
 -  Nginx run on 8080 port.
-   - Status:
-   - Learning:
+   - Status: [8080_port](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/8080port1.png) , [restartnginx](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/restartnginx.png)
+   - Learning: configuration of nginx manually via editing nginx.config (/etc/nginx/nginx.config), using lineinfile module to edit the content of a file on remote servers .
 
 
 Step3:
