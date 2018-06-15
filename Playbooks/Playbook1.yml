@@ -1,0 +1,31 @@
+---
+- name: test
+  hosts: app
+  become: true
+  gather_facts: true
+  tasks:
+   - name: "Add repository"
+     yum_repository:
+      name: epel
+      description: EPEL YUM repo
+      baseurl: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
+   - name: "installing java8"
+     yum:
+       name: java-1.8.0-openjdk
+       state: present
+   - name: "Install tomcat"
+     yum:
+       name: tomcat
+       state: present
+   - name: "copy war file into webapps folder of tomcat"
+     copy:
+       src: /home/sudipt/appwar/sample.war
+       dest: /usr/share/tomcat/webapps/
+   - name: "Enable tomcat"
+     service:
+       name: tomcat
+       enabled: yes
+   - name: "Start Tomcat"
+     service:
+       name: tomcat
+       state: started
