@@ -1,0 +1,19 @@
+---
+- name: test
+  hosts: app
+  become: true
+  become_user: root
+  gather_facts: true
+  tasks:
+   - name: "clone repo"
+     git:
+      repo: 'https://github.com/OpsTree/ContinuousIntegration.git'
+      dest: /home/vagrant/task/
+      clone: yes
+   - name: Download maven using command module
+     command: wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+   - name: yum install
+     yum:
+      name: apache-maven
+      state: present
+...
