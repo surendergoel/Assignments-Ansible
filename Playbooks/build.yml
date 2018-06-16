@@ -16,4 +16,7 @@
      yum:
       name: apache-maven
       state: present
+   - name: clean compile
+     shell: mvn clean install chdir=/home/vagrant/task/Spring3HibernateApp/
+
 ...
