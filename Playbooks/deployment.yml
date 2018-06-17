@@ -1,0 +1,14 @@
+---
+- name: test
+  hosts: app
+  become: true
+  become_user: root
+  gather_facts: true
+  tasks:
+   - name: Deployment
+     command: cp /home/vagrant/task/Spring3HibernateApp/target/Spring3HibernateApp.war /var/lib/tomcat/webapps
+   - name: Tomcat restart
+     service:
+      name: tomcat
+      state: started
+...
