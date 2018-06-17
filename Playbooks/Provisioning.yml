@@ -1,0 +1,20 @@
+---
+- name: provisioning
+  hosts: app
+  become: true
+  gather_facts: true
+  tasks:
+   - name: "Add repository"
+     yum_repository:
+      name: epel
+      description: EPEL YUM repo
+      baseurl: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
+   - name: "installing java8"
+     yum:
+       name: java-1.8.0-openjdk
+       state: present
+   - name: "Install tomcat"
+     yum:
+       name: tomcat
+       state: present
+...
