@@ -7,7 +7,7 @@ All needs to be done using ansible modules with jenkins There will be three jenk
    - Provision application servers, for example - java, tomcat are required for a java project.
      
    - This job will be a separate job and can be executed to any machine on requirement.
-       - Status: [provision_configure](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/provision_configure.png) , [provision_outpu](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/provision_output.png) , [provisioning.yml](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Playbooks/Provisioning.yml)
+       - Status: [provision_configure](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/provision_configure.png) , [provision_output](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/provision_output.png) , [provisioning.yml](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Playbooks/Provisioning.yml)
        - Learning:
        
 
