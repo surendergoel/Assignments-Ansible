@@ -11,4 +11,13 @@
      service:
       name: tomcat
       state: started
+   - name: "wait for website to come up"
+     uri:
+      url: "http://192.168.33.20:8080/Spring3HibernateApp/"
+      status_code: 200
+      register: result
+      until: result.status == 200
+      retries: 90
+      delay: 10
 ...
+
