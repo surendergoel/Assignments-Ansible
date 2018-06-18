@@ -6,7 +6,7 @@
 -   Create a new key
     - Status: [new_key](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/key%20new.png) 
 -  Add new key to authorized_keys files on your nodes
-   - Status: [adding_keys](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/key%20run%20playbook.png) , [older-keys](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/key%20previous.png) , 
+   - Status: [adding_keys](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/key%20run%20playbook.png) , [older-keys](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/key%20previous.png) 
 - Test new key
   - Status: [new_keys](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/key%20new%20authorized.png)
 - Remove previous keys from authorized_keys files on your nodes.
