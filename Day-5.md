@@ -22,9 +22,9 @@ All needs to be done using ansible modules with jenkins There will be three jenk
     - Create a down stream deployment job to the build job .
     - In the deployment job , deploy the artifact (war in case of java) to the application server (tomcat/joboss) using ansible in the downstream job.
     - Ansible play book will include health check also, (status code == 200) , if health check fails, job should also fail.
-     - Status: [deploy_configure](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/deploy_configure.png) , [deploy_console](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/deploy_console.png) , [deployment.yml](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Playbooks/deployment.yml)
-     - Learning: Learned about the limitations of copy module, and the concept of health checkup of a url and using uri module.
-     - Issue: [downstream_config](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/deploy_error2.png) , [downstream console](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/deploy_error1.png) . The deployment job is running successfully until it is triggered as downstream job of build job.
+      - Status: [deploy_configure](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/deploy_configure.png) , [deploy_console](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/deploy_console.png) , [deployment.yml](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Playbooks/deployment.yml)
+      -  Learning: Learned about the limitations of copy module, and the concept of health checkup of a url and using uri module.
+      - Issue: [downstream_config](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/deploy_error2.png) , [downstream console](https://github.com/sudiptninja/Assignments-Ansible/blob/master/Media/deploy_error1.png) . The deployment job is running successfully until it is triggered as downstream job of build job.
      
      
      
