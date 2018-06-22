@@ -1,0 +1,51 @@
+---
+- name: Create a Logical Volume
+  hosts: all
+  remote_user: vagrant
+  become: true
+  tasks:
+   - name: Installing lvm2 on nodes
+     apt:
+      name: lvm2
+      state: present
+
+   - name: Creating a physical volume
+     lvg:
+      vg: firefly
+      pvs: /dev/sdb
+      state: present
+      pesize: 32
+
+   - name: Create a logical volume of 512m with disks /dev/sda and /dev/sdb
+     lvol:
+      vg: firefly
+      lv: dragonfly
+      size: 512
+      pvs: /dev/sda,/dev/sdb
+      active: true
+
+   - name: Resize the logical volume to % of VG
+     lvol:
+      vg: firefly
+      lv: dragonfly
+      size: 80%VG
+      force: yes
+
+   - name: Create a ext4 filesystem on /dev/sdb1
+     filesystem:
+      fstype: ext4
+      dev: /dev/firefly/dragonfly
+
+   - name: Creating a mount point
+     file:
+      path: /mnt/volumemnt
+       state: directory
+
+   - name: Mount up device
+     mount:
+      path: /mnt/volumemnt
+      src: /dev/firefly/dragonfly
+      fstab: /etc/fstab
+      fstype: ext4
+      state: present
+...
