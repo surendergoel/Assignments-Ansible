@@ -9,3 +9,6 @@
 ## Resources
 
 * [Firewalld](http://docs.ansible.com/ansible/latest/firewalld_module.html)
+
+
+- Status: Few steps are pending..
