@@ -1,0 +1,12 @@
+---
+ - name:
+   hosts: 192.168.33.30 
+   gather_facts: true
+   tasks:
+    - name: Get service on port 80
+      shell: netstat -l 
+      register: results
+
+    - name: See what netstat returned
+      debug: var=results
+...
