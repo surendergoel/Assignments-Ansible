@@ -6,9 +6,4 @@
 1. Enable only port 8080 and 8081 on the node machines.
 1. Again Check for open ports and append in same file with current date and time.
 
-## Resources
-
-* [Firewalld](http://docs.ansible.com/ansible/latest/firewalld_module.html)
-
-
 - Status: Few steps are pending..
