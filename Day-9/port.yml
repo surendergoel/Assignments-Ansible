@@ -1,0 +1,27 @@
+---
+ - name: ports
+   hosts: all
+   gather_facts: true
+   tasks:
+    - name: List of all open ports
+      shell: netstat -l
+      register: results
+
+    - name: See what netstat returned
+      debug: var=results
+    - name: setting up port
+      ufw:
+        rule: reject
+        port: 23
+        port: 6005
+        port: 8005 
+        port: 8080
+        port: 8081
+    - name:
+      ufw:      
+        rule: allow
+        port: 22
+        port: 8080
+        port: 8081
+        state: reloaded
+...
