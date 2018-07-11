@@ -1,0 +1,20 @@
+---
+ - name:
+   hosts: 192.168.33.30
+   gather_facts: true
+   tasks:
+    - name: List of all open ports
+      shell: netstat -l
+      register: results
+
+    - name: See what netstat returned
+      debug: var=results
+    - name: Disabling port
+      ufw:
+        rule: reject
+        port: 8080
+        port: 8081
+        port: 8005
+        port: 6005
+        port: 23
+...
